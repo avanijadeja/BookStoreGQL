@@ -11,6 +11,7 @@ const db = require("./config/connection");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -31,6 +32,7 @@ app.get("/", (req, res) => {
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();
+  // Express server as middleware.
   server.applyMiddleware({ app });
 
   db.once("open", () => {

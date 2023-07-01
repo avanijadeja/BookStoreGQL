@@ -9,9 +9,9 @@ This website allows you to search for books of your liking from a Google Book AP
 In Book Search Engine application,
 
 GIVEN a book search engine
-WHEN user load the search engine
+-WHEN user load the search engine
 THEN user presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN user click on the Search for Books menu option
+-WHEN user click on the Search for Books menu option
 THEN user presented with an input field to search for books and a submit button
 WHEN user not logged in and enter a search term in the input field and click the submit button
 THEN user presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
