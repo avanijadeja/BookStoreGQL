@@ -6,7 +6,7 @@ import Auth from "../utils/auth";
 
 const SignupForm = () => {
   // Create a function For ADD_USER
-  const [addUser, { error }] = userMutation(ADD_USER);
+  const [addUser, { error }] = useMutation(ADD_USER);
 
   // set initial form state
   const [userFormData, setUserFormData] = useState({
