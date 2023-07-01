@@ -4,7 +4,7 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
      // Define the functions that will fulfill the query
-  query: {
+  Query: {
     me: async (parent, args, context) => {
       if (context.user) {
         const userData = await User.findOne({ _Id: context.user._Id })
