@@ -8,7 +8,7 @@ const typeDefs = gql`
     email: String
     bookCount: Int
     # Add a queryable field to retrieve an array of Book objects
-    saveBooks: [Book]
+    savedBooks: [Book]
   }
 
   # Define what can be queried for each Book
