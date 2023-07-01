@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
 
 import { useQuery, useMutation } from "@apollo/client";
@@ -18,7 +18,6 @@ const SavedBooks = () => {
   const userData = data?.me || data?.user || {};
 
   const [deleteBook] = useMutation(REMOVE_BOOK);
-
   const handleDeleteBook = async (bookId) => {
     if (!token) {
       return false;
