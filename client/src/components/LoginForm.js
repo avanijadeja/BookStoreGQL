@@ -90,6 +90,8 @@ const LoginForm = () => {
           Submit
         </Button>
       </Form>
+      {/*  if error occur show login failed */}
+      {error && <div>Login failed</div>}
     </>
   );
 };
