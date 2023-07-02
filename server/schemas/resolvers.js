@@ -21,12 +21,14 @@ const resolvers = {
   // Define the functions that will fulfill the mutations
   Mutation: {
     // adduser mutation
-    addUser: async (parent, args) => {
+    addUser: async (_parent, args, context) => {
+      console.log(args, context);
       // create user
       const user = await User.create(args);
       //  generate token
       const token = signToken(user);
       //  return user and token
+      console.log(user, token);
       return { token, user };
     },
     // for login check email and password if not find error occur
@@ -43,11 +45,11 @@ const resolvers = {
 
       //  token with particular user
       const token = signToken(user);
-      return token, user;
+      return { token, user };
     },
 
     //  saveBook mutation
-    saveBook: async (parent, { bookData }, context) => {
+    saveBook: async (_parent, { bookData }, context) => {
       //  for current user
       if (context.user) {
         const newUserData = await User.findByIdAndUpdate(
