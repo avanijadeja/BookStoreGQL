@@ -9,6 +9,7 @@ This website allows you to search for books of your liking from a Google Book AP
 In Book Search Engine application,
 
 GIVEN a book search engine
+
 - WHEN user load the search engine,
   THEN user presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button.
 - WHEN user click on the Search for Books menu option,
@@ -38,7 +39,6 @@ GIVEN a book search engine
 - WHEN user click on the Logout button,
   THEN user logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button.
 
-
 # Table of Contents
 
 - [Installation](#installation)
@@ -51,14 +51,14 @@ GIVEN a book search engine
 # Installation
 
 For this MERN application,
- - On client terminal run command npm i @apollo/client graphql
- - On server terminal run command npm i apollo-server-express
- - then for all packages run command npm install
- - for seed run command npm run seed
- - to run application run command npm run develop
 
+- On client terminal run command - npm i @apollo/client graphql
+- On server terminal run command - npm i @apollo-server-express
+- then for all packages run command - npm install
+- for seed run command - npm run seed
+- to run application run command - npm run develop
 
-## Built With
+# Built With
 
 - JavaScript
 - MongoDB
@@ -75,7 +75,6 @@ For this MERN application,
 The URL of the functional, deployed application -
 
 The URL of the GitHub repository - https://github.com/avanijadeja/book-search-engine
-
 
 # Credits
 
