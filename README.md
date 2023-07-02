@@ -39,10 +39,11 @@ GIVEN a book search engine
 - WHEN user click on the Logout button,
   THEN user logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button.
 
+In this book serach engine application, I used Javscript,MongoDB,Graphql,Appllo Client/server,Google Book API,React,Mongoose,JWT.
+
 # Table of Contents
 
 - [Installation](#installation)
-- [Bulitwith](#buildwith)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
@@ -57,18 +58,6 @@ For this MERN application,
 - then for all packages run command - npm install
 - for seed run command - npm run seed
 - to run application run command - npm run develop
-
-# Built With
-
-- JavaScript
-- MongoDB
-- GraphQL
-- Apollo Client/Server
-- Google Book API
-- React
-- Mongoose
-- JWT
-- bcrypt
 
 # Usage
 
