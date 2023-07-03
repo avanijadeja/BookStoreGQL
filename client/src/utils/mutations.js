@@ -3,7 +3,7 @@ import { gql } from "@apollo/client";
 
 // LOGIN_USER will execute the loginUser mutation set up using Apollo Server
 export const LOGIN_USER = gql`
-  mutation Login($email: String!, $password: String!) {
+  mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
       token
       user {
@@ -16,13 +16,22 @@ export const LOGIN_USER = gql`
 
 // ADD_USER will execute the addUser mutation.
 export const ADD_USER = gql`
-  mutation AddUser($username: String!, $email: String!, $password: String!) {
+  mutation addUser($username: String!, $email: String!, $password: String!) {
     addUser(username: $username, email: $email, password: $password) {
       token
       user {
         _id
         username
         email
+        bookCount
+        savedBooks {
+          authors
+          bookId
+          image
+          link
+          title
+          description
+        }
       }
     }
   }
@@ -30,7 +39,7 @@ export const ADD_USER = gql`
 
 // SAVE_BOOK will execute the saveBook mutation.
 export const SAVE_BOOK = gql`
-  mutation SaveBook($bookData: saveBookInput!) {
+  mutation saveBook($bookData: saveBookInput!) {
     saveBook(bookData: $bookData) {
       _id
       username
@@ -49,7 +58,7 @@ export const SAVE_BOOK = gql`
 
 // REMOVE_BOOK will execute the removeBook mutation.
 export const REMOVE_BOOK = gql`
-  mutation RemoveBook($bookId: String!) {
+  mutation removeBook($bookId: String!) {
     removeBook(bookId: $bookId) {
       _id
       username
