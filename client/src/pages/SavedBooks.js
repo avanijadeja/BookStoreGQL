@@ -6,16 +6,21 @@ import { REMOVE_BOOK } from "../utils/mutations";
 import Auth from "../utils/auth";
 import { removeBookId } from "../utils/localStorage";
 
+//  function SavedBook
 const SavedBooks = () => {
+  // check user token for valid token
   const token = Auth.loggedIn() ? Auth.getToken() : null;
   const { loading, data } = useQuery(GET_ME, {
     variables: { token },
   });
 
+  // check userData
   const userData = data?.me || data?.user || {};
 
+  // call useMutation REMOVE_BOOK
   const [deleteBook] = useMutation(REMOVE_BOOK);
-  
+
+  // handleDeleteBook function
   const handleDeleteBook = async (bookId) => {
     if (!token) {
       return false;
@@ -29,6 +34,7 @@ const SavedBooks = () => {
     }
   };
 
+  // if loading show div values
   if (loading) {
     return <div>Loading...</div>;
   }
