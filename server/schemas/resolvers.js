@@ -22,13 +22,13 @@ const resolvers = {
   Mutation: {
     // adduser mutation
     addUser: async (_parent, args, context) => {
-      console.log(args, context);
+    
       // create user
       const user = await User.create(args);
       //  generate token
       const token = signToken(user);
       //  return user and token
-      console.log(user, token);
+  
       return { token, user };
     },
     // for login check email and password if not find error occur
