@@ -61,7 +61,8 @@ For this MERN application,
 
 # Usage
 
-The URL of the functional, deployed application -
+The URL of the functional, deployed application - https://blooming-spire-61902-b62883f5d525.herokuapp.com/
+
 
 The URL of the GitHub repository - https://github.com/avanijadeja/book-search-engine
 
