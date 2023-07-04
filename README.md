@@ -61,8 +61,15 @@ For this MERN application,
 
 # Usage
 
-The URL of the functional, deployed application - https://blooming-spire-61902-b62883f5d525.herokuapp.com/
+![signUp](./client/src/assets/images/signup.png)
+![login](./client/src/assets/images/login.png)
+![bookSearch](./client/src/assets/images/serachBook.png)
+![bookSave](./client/src/assets/images/bookSave.png)
+![seeBook](./client/src/assets/images/seeYourBook.png)
 
+![bookserachengineGIF](./client/src/assets/images/book-serach-engine.gif)
+
+The URL of the functional, deployed application - https://blooming-spire-61902-b62883f5d525.herokuapp.com/
 
 The URL of the GitHub repository - https://github.com/avanijadeja/book-search-engine
 
