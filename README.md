@@ -63,11 +63,11 @@ For this MERN application,
 
 ![signUp](./client/src/assets/images/signup.png)
 ![login](./client/src/assets/images/login.png)
-![bookSearch](./client/src/assets/images/serachBook.png)
+![bookSearch](./client/src/assets/images/searchBook.png)
 ![bookSave](./client/src/assets/images/bookSave.png)
 ![seeBook](./client/src/assets/images/seeYourBook.png)
 
-![bookserachengineGIF](./client/src/assets/images/book-serach-engine.gif)
+![bookserachengineGIF](./client/src/assets/images/BookStoreGQL.gif)
 
 The URL of the functional, deployed application - https://frozen-mountain-60263-d07f2d628798.herokuapp.com/
 
