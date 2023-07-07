@@ -1,12 +1,12 @@
-# book-search-engine
+# BOOKSTOREGQL
 
-Book Search Engine search for new books to read and keep a list of books to purchase.
+Book Store GQL search for new books to read, keep a list of books to purchase and delete books from purchase list using graphQL.
 
 ## Description
 
 This website allows you to search for books of your liking from a Google Book API. Based on your search there will be a list of books that match the description. You are also given the option to create an acount and sign in to that account. This is verified using JWTs to verify the user. When you are logged in you are able to add the books you wish to your book list. You can also remove them at a later time if you wish to do so.
 
-In Book Search Engine application,
+In Book Store GQL application,
 
 GIVEN a book search engine
 
