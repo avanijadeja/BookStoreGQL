@@ -1,4 +1,4 @@
-# BOOK STORE GQL
+# Book Store GQL
 
 Book Store GQL search for new books to read, keep a list of books to purchase and delete books from purchase list using graphQL.
 
