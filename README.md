@@ -71,7 +71,7 @@ For this MERN application,
 
 The URL of the functional, deployed application - https://frozen-mountain-60263-d07f2d628798.herokuapp.com/
 
-The URL of the GitHub repository - https://github.com/avanijadeja/book-search-engine
+The URL of the GitHub repository - https://github.com/avanijadeja/BookStoreGQL
 
 # Credits
 
